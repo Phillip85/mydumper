@@ -34,7 +34,14 @@ The :program:`mydumper` tool has several available options:
 
 .. option:: --defaults-file
    
-   Use the given option file. If the file does not exist or is otherwise inaccessible, no failure occurs
+   Use the given option file. If the file does not exist or is otherwise inaccessible, no failure occursmay
+   
+   Its possible to authenticate via --defaults-file.
+   A section [mydumper] or [client] is needed for authentication
+   
+   [mydumper]
+   user=
+   password=
 
 .. option:: --host, -h
 
